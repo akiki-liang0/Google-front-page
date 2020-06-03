@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('assets/fonts/Roboto/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: arial, Roboto-Regular;
+    font-size: 13px;
+}
+
+/*
+========================
+        Navbar
+========================
+*/
+.top-nav {
+    margin: 6px 20px 0 20px;
+    display: flex;
+}
+nav {
+    justify-content: space-between;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+}
+
+.nav-left ul li {
+    float: left;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav-right ul li {
+    display: inline-block;
+}
+
+.sign-in-button {
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    background-color: #4285f4;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.show-apps-image {
+    width: 16px;
+    height: auto;
+    transform: translate(-4px, 4px);
+    filter: invert(50%);
+}
+
+.show-apps-image:hover {
+    filter: invert(0%)
+}
+
+.about-link {
+    color: rgba(0,0,0,0.80);
+    text-decoration: none;
+}
+
+.about-link:hover {
+    text-decoration: underline;
+}
+
+.store-link {
+    color: rgba(0,0,0,0.80);
+    text-decoration: none;
+}
+
+.store-link:hover {
+    text-decoration: underline;
+}
+
+.gmail-link {
+    color: rgba(0,0,0,0.80);
+    text-decoration: none;
+}
+
+.gmail-link:hover {
+    text-decoration: underline;
+}
+
+.images-link {
+    color: rgba(0,0,0,0.80);
+    text-decoration: none;
+}
+
+.images-link:hover {
+    text-decoration: underline;
+}
+
+/*
+========================
+        Search
+========================
+*/
+
+.logo {
+    position: absolute;
+    display: block;
+    top: calc(30% - 92px/3);
+    left: calc(50% - 272px/2);
+}
+
+
+/* Search Bar Items */
+
+.search-form {
+    position: absolute;
+    top: calc((30% - 44px/3) + 100px);
+    left: calc(50% - 561px/2);
+    height: 44px;
+    width: 561px;
+    margin: 4px 4px 4px 4px; 
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #dfe1e5;
+    display: flex;
+}
+.search-form:hover {
+    -webkit-box-shadow: -1px 2px 10px -3px rgb(201, 201, 201);
+       -moz-box-shadow: -1px 2px 10px -3px rgb(201, 201, 201);
+            box-shadow: -1px 2px 10px -3px rgb(201, 201, 201);
+}
+
+.input-field {
+    border: none;
+    width: 473px;
+    height: 44px;
+    padding: 0 0px 0 10px;
+    font-size: 16px;
+    z-index: 2;
+}
+
+
+.search-icon-image {
+    width: 30px;
+    margin-left: 12px;
+    margin-top: 15px;
+    filter: opacity(35%)
+}
+
+.mic-icon-image {
+    width: 18px;
+    margin-top: 11px;
+    margin-left: 9px;
+}
+
+/* Two buttons */
+.below-buttons {
+    justify-content: center;
+    position: absolute;
+    top: calc(30% - (36px/3) + 150px);
+    left: calc(50% - (136.8px + 154.683px)/2);
+}
+
+.below-buttons-list {
+    display: flex;
+}
+
+.below-buttons-list li {
+    margin-top: 19px;;
+    margin-bottom: 2px;
+}
+
+.below-buttons-list li button {
+    background: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f2f2f2;
+    border-radius: 4px;
+    padding: 0 18px 0 18px;
+    height: 36px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.60);
+}
+
+.below-buttons-list li button:hover {
+    border-color: rgb(201, 201, 201);
+    overflow: visible;
+    -webkit-box-shadow: 0 10px 70px -10px rgb(201, 201, 201);
+       -moz-box-shadow: 0 10px 70px -10px rgb(201, 201, 201);
+            box-shadow: 0 10px 70px -10px rgb(201, 201, 201);
+    
+}
+
+.google-search-button {
+    float: left;
+}
+
+.feeling-lucky-button {
+    float: right;
+}
+
+/*
+========================
+        Footer
+========================
+*/
+
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    padding: 6px 20px 6px 20px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.60);
+}
+
+footer ul {
+    list-style-type: none;
+    /*display: flex;*/
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 4px 0 4px;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-left-lst {
+    float: left;
+}
+
+.footer-right-lst {
+    float: right;
+}
