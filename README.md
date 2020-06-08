@@ -6,4 +6,4 @@ For now this project can be viewed from: https://raw.githack.com/akiki-liang0/Go
 
 ### Demo Images
 Here is a preview of the project:
-![Project Demo Image 1](/assets/images/1.png)
+![Project Demo Image 1](/assets/images/2.png)
